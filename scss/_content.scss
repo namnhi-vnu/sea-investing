@@ -50,7 +50,7 @@ ul {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 730px;
+    min-height: 698px;
     height: 100%;
     position: relative;
     display: flex;
@@ -125,4 +125,48 @@ ul {
     }
 
 
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+
+        img {
+            width: 25%;
+        }
+
+        ul {
+            margin-top: 1em;
+        }
+
+        ul li a {
+            font-size: 0.9em;
+        }
+    }
+
+    .page-main {
+        flex-direction: column;
+
+    }
+
+    .page-main__title {
+        margin-bottom: 1em;
+    }
+
+    .page-main__title h2 {
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+
+    .page-main__title p {
+        font-size: 1em;
+    }
+
+    .page-main__form {
+        padding: 2em;
+    }
+
+    .modal-content {
+        width: 397px !important;
+    }
 }
