@@ -18,7 +18,7 @@ function sendcontact() {
         request.open("POST", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSetpMV7IzBkQRPglLbvDPtUfiZ-E3TZCYmzh3JG_zImm1-w-A/formResponse");
         request.send(formData);
         setTimeout(function () {
-            location.replace("/thanks.html");
+            location.replace("/index.html");
         }, 1000);
     }
 
