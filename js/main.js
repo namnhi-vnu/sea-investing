@@ -10,12 +10,12 @@ function sendcontact() {
 
     } else {
         var formData = new FormData();
-        formData.append('entry.1271997867', lastname);
-        formData.append('entry.1095750650', firstname);
-        formData.append('entry.393996561', emails);
-        formData.append('entry.296901862', phones);
+        formData.append('entry.347485993', lastname);
+        formData.append('entry.1835009128', firstname);
+        formData.append('entry.1889409274', emails);
+        formData.append('entry.204590075', phones);
         var request = new XMLHttpRequest();
-        request.open("POST", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfv_Zp98NOKbADHH9xXQmM1jjEslIQc-XCl2TNYFsPR3mh4jg/formResponse");
+        request.open("POST", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSetpMV7IzBkQRPglLbvDPtUfiZ-E3TZCYmzh3JG_zImm1-w-A/formResponse");
         request.send(formData);
         setTimeout(function () {
             location.replace("/thanks.html");
