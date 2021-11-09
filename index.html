@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea investing</title>
+    <meta name="author" content="">
+    <meta property="og:title" content="Sea investing" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="link url " />
+    <meta property="og:image" content="/images/san-chung-khoan.jpg" />
+    <meta property="og:description" content="Sea investing" />
+    <meta property="og:site_name" content="" />
+    <link rel="shortcut icon" type="image/png" href="https://cdn.seainvesting.com/ASX/shared/img/general/favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="page">
+        <header class="page-header">
+            <div class="containers">
+                <div class="navbar">
+                    <img src="./images/logo.svg" alt="">
+                    <ul>
+                        <li><a href="" data-toggle="modal" data-target="#exampleModalCenter">Liên Hệ với Chúng Tôi</a>
+                        </li>
+                        <li><a href="">Đăng Nhập</a></li>
+                        <li><a href=""><i class="fal fa-globe"></i> English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="page-main">
+            <div class="page-main__title">
+                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                <p>Đăng ký tài khoản với spread thấp, giao dịch cực nhanh và được hỗ trợ đa ngôn ngữ 24/5 chỉ trong vài
+                    phút.</p>
+            </div>
+            <div class="page-main__form">
+                <form class="main-form">
+                    <h2>Gửi Thông tin để được tư vấn</h2>
+                    <div>
+                        <div>
+                            <label for="">Tên</label>
+                            <input type="text" placeholder="Tên" class="last-name" required>
+                        </div>
+                        <div>
+                            <label for="">Họ</label>
+                            <input type="text" placeholder="Họ" class="first-name" required>
+                        </div>
+                        <div>
+                            <label for="">E-mail</label>
+                            <input type="email" placeholder="Email" class="emails" required>
+                        </div>
+                        <div>
+                            <label for="">Số điện thoại</label>
+                            <input type="number" placeholder="Số điện thoại" class="phones" required>
+                        </div>
+                        <div>
+                            <button type="submit" onclick="sendcontact()" class="sends">Gửi</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Liên với chúng tôi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Họ tên:</label>
+                        <input type="text" class="form-control" id="recipient-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Số điện thoại:</label>
+                        <input type="number" class="form-control" id="recipient-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="recipient-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Gửi</button>
+            </div>
+        </div>
+    </div>
+</div>
